@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="Order.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Order your Favorite Pizza</h1>
+            <a href="Menu.html" class="btn">View Menu</a>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/Main.html">About Us</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="order-section" class="order-section">
+            <div class="container">
+                <h2>Place Your Order</h2>
+                <form id="orderForm" action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pizzaType">Select Pizza:</label>
+                        <select id="pizzaType" name="pizzaType">
+                            <option value="Margherita">Margherita</option>
+                            <option value="Pepperoni">Pepperoni</option>
+                            <option value="BBQ Chicken">BBQ Chicken</option>
+                            <option value="Veggie">Veggie</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address:</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Order</button>
+                </form>
+                <div id="priceDisplay" style="margin-top: 10px; font-weight: bold; color: #333;"></div>
+
+
+                <div id="orderSummary" class="order-summary" style="display: none;">
+                    <h3>Order Summary</h3>
+                    <p id="summaryDetails"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="Code.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Vittoria Pizzeria. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
